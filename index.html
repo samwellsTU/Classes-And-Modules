@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classes</title>
+    <!-- Load the main JavaScript module -->
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <h1>A keyboard?</h1>
+
+    <!-- Piano keyboard buttons for one octave (C to C, including sharps) -->
+    <div>
+        <button>C</button>
+        <button>C#</button>
+        <button>D</button>
+        <button>D#</button>
+        <button>E</button>
+        <button>F</button>
+        <button>F#</button>
+        <button>G</button>
+        <button>G#</button>
+        <button>A</button>
+        <button>A#</button>
+        <button>B</button>
+        <button>C</button>  <!-- Octave higher C -->
+    </div>
+
+    <!-- Volume control section -->
+    <div>
+        <!-- Volume slider label -->
+        <label for="volSlider">Volume</label>
+
+        <!-- Range slider: -70 dB (quiet) to +6 dB (loud) -->
+        <input id="volSlider" type="range" value="-70" min="-70" max="6">
+
+        <!-- Display current volume value in decibels full scale (dBFS) -->
+        <label for="volSlider" id="volLabel"> -70.0 dBFS</label>
+    </div>
+
+</body>
+</html>
